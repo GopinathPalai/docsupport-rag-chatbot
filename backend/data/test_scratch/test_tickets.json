@@ -64,5 +64,27 @@
     ],
     "created_at": "2026-09-29T09:51:17.836222+00:00",
     "updated_at": "2026-09-29T09:51:17.836737+00:00"
+  },
+  "TICK-3416": {
+    "ticket_id": "TICK-3416",
+    "customer_name": "Sarah Connor",
+    "customer_email": "sarah@cyberdyne.com",
+    "priority": "urgent",
+    "category": "Billing",
+    "subject": "Enterprise contract refund query",
+    "message": "Need clarification on 30-day guarantee",
+    "session_id": "default",
+    "conversation_history": [],
+    "status": "in_progress",
+    "assigned_agent": null,
+    "agent_notes": [
+      {
+        "note": "Assigned to Senior Billing Specialist.",
+        "author": "Support Agent",
+        "timestamp": "2026-09-29T10:30:27.145562+00:00"
+      }
+    ],
+    "created_at": "2026-09-29T10:30:27.145068+00:00",
+    "updated_at": "2026-09-29T10:30:27.145569+00:00"
   }
 }

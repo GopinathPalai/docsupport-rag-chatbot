@@ -14,5 +14,219 @@
     "agent_notes": [],
     "created_at": "2026-09-29T10:07:20.142663+00:00",
     "updated_at": "2026-09-29T10:07:20.142663+00:00"
+  },
+  "TICK-7402": {
+    "ticket_id": "TICK-7402",
+    "customer_name": "Morgan Vance",
+    "customer_email": "morgan@apexcloud.io",
+    "priority": "medium",
+    "category": "Technical Support",
+    "subject": "Escalation from AI Support Session",
+    "message": "",
+    "session_id": "session_main",
+    "conversation_history": [
+      {
+        "id": "initial",
+        "role": "assistant",
+        "content": "Hello! I am **DocuSupport AI**, the official virtual support assistant for ApexCloud. I can provide accurate answers directly grounded in our verified product documentation, pricing catalogs, SLAs, and security guides.\n\nHow can I help you today?",
+        "timestamp": "03:54 PM",
+        "citations": []
+      },
+      {
+        "id": "u_1790677484001",
+        "role": "user",
+        "content": "How much does the Pro tier cost and what is included?",
+        "timestamp": "03:54 PM"
+      },
+      {
+        "id": "b_1790677484017",
+        "role": "assistant",
+        "content": "Based on our official **ApexCloud Refund and Cancellation Policy** (Section: *5. Account Downgrades & Storage Quotas*, Page 1):\n\nIf you downgrade from a higher tier to a lower tier:\n- The downgrade takes effect at the next renewal cycle. - If your account exceeds the storage quota of the lower tier (e.g. 500 GB on Pro vs 10 GB on Starter), you will have a 14-day grace period to download or remove excess data.\n\n*(Reference: ApexCloud Refund and Cancellation Policy - 5. Account Downgrades & Storage Quotas)*",
+        "citations": [
+          {
+            "chunk_id": "11100b1b_c5",
+            "doc_name": "ApexCloud Refund and Cancellation Policy",
+            "full_text": "If you downgrade from a higher tier to a lower tier:\n- The downgrade takes effect at the next renewal cycle.\n- If your account exceeds the storage quota of the lower tier (e.g. 500 GB on Pro vs 10 GB on Starter), you will have a 14-day grace period to download or remove excess data. After 14 days, files exceeding the quota will be read-only.",
+            "page_number": 1,
+            "section_title": "5. Account Downgrades & Storage Quotas",
+            "similarity_score": 0.4613,
+            "snippet": "If you downgrade from a higher tier to a lower tier:\n- The downgrade takes effect at the next renewal cycle.\n- If your account exceeds the storage quota of the lower tier (e.g. 500 GB on Pro vs 10 GB on Starter), you will have a 14-day...",
+            "source_type": "markdown"
+          },
+          {
+            "chunk_id": "e90add98_c3",
+            "doc_name": "ApexCloud Pricing and Plans",
+            "full_text": "- Price: $29 per user / month (or $24 per user / month billed annually - save 17%)\n- Users: 4 to 25 team members\n- Storage: 500 GB pooled storage\n- Features: Real-time document collaboration, unlimited workflow automation pipelines, REST API access (rate limit 1,000 requests/minute), 99.9% uptime SLA.\n- Support: Standard email and live chatbot support with a guaranteed 12-hour response time.",
+            "page_number": 1,
+            "section_title": "2. Professional Tier (Pro)",
+            "similarity_score": 0.3364,
+            "snippet": "- Price: $29 per user / month (or $24 per user / month billed annually - save 17%)\n- Users: 4 to 25 team members\n- Storage: 500 GB pooled storage\n- Features: Real-time document collaboration, unlimited workflow automation pipelines, REST...",
+            "source_type": "markdown"
+          },
+          {
+            "chunk_id": "a84c24c8_c2",
+            "doc_name": "ApexCloud API and Troubleshooting Guide",
+            "full_text": "ApexCloud enforces rate limits per tenant based on subscription tier:\n- Starter: No API access\n- Professional (Pro): 1,000 requests per minute\n- Business: 5,000 requests per minute\n- Enterprise: 25,000 requests per minute (custom bursts available)\n\nIf rate limits are exceeded, the API responds with HTTP 429 Too Many Requests and includes the following headers:\n- `X-RateLimit-Limit`: Maximum requests per minute.\n- `X-RateLimit-Remaining`: Remaining request quota.\n- `Retry-After`: Number of seconds to wait before retrying.",
+            "page_number": 1,
+            "section_title": "2. API Rate Limiting & Throttling",
+            "similarity_score": 0.2919,
+            "snippet": "ApexCloud enforces rate limits per tenant based on subscription tier:\n- Starter: No API access\n- Professional (Pro): 1,000 requests per minute\n- Business: 5,000 requests per minute\n- Enterprise: 25,000 requests per minute (custom bursts...",
+            "source_type": "markdown"
+          },
+          {
+            "chunk_id": "11100b1b_c1",
+            "doc_name": "ApexCloud Refund and Cancellation Policy",
+            "full_text": "ApexCloud offers a full, no-questions-asked 30-day money-back guarantee for all first-time purchases of Annual Pro and Annual Business plans. If you are not completely satisfied within the first 30 days of initial purchase, contact support@apexcloud.io or trigger a human support ticket to receive a 100% refund.",
+            "page_number": 1,
+            "section_title": "1. 30-Day Money-Back Guarantee",
+            "similarity_score": 0.2621,
+            "snippet": "ApexCloud offers a full, no-questions-asked 30-day money-back guarantee for all first-time purchases of Annual Pro and Annual Business plans. If you are not completely satisfied within the first 30 days of initial purchase, contact...",
+            "source_type": "markdown"
+          }
+        ],
+        "confidence_score": 0.461,
+        "is_fallback": false,
+        "suggest_handoff": false,
+        "hand_off_requested": false,
+        "timestamp": "03:54 PM"
+      },
+      {
+        "id": "u_1790677489852",
+        "role": "user",
+        "content": "Can I rent a submarine in the Bahamas?",
+        "timestamp": "03:54 PM"
+      },
+      {
+        "id": "b_1790677489865",
+        "role": "assistant",
+        "content": "I do not have enough verified information in our company documents to answer this question accurately. To make sure you get the exact details, would you like me to connect you with a human support specialist?",
+        "citations": [],
+        "confidence_score": 0,
+        "is_fallback": true,
+        "suggest_handoff": true,
+        "hand_off_requested": false,
+        "timestamp": "03:54 PM"
+      }
+    ],
+    "status": "open",
+    "assigned_agent": null,
+    "agent_notes": [],
+    "created_at": "2026-09-29T10:24:54.256973+00:00",
+    "updated_at": "2026-09-29T10:24:54.256973+00:00"
+  },
+  "TICK-9175": {
+    "ticket_id": "TICK-9175",
+    "customer_name": "Morgan Vance",
+    "customer_email": "morgan@apexcloud.io",
+    "priority": "medium",
+    "category": "Technical Support",
+    "subject": "Escalation from AI Support Session",
+    "message": "",
+    "session_id": "session_main",
+    "conversation_history": [
+      {
+        "id": "initial",
+        "role": "assistant",
+        "content": "Hello! I am **DocuSupport AI**, the official virtual support assistant for ApexCloud. I can provide accurate answers directly grounded in our verified product documentation, pricing catalogs, SLAs, and security guides.\n\nHow can I help you today?",
+        "timestamp": "03:56 PM",
+        "citations": []
+      },
+      {
+        "id": "u_1790677617344",
+        "role": "user",
+        "content": "How much does the Pro tier cost and what is included?",
+        "timestamp": "03:56 PM"
+      },
+      {
+        "id": "b_1790677617352",
+        "role": "assistant",
+        "content": "Based on our official **ApexCloud Refund and Cancellation Policy** (Section: *5. Account Downgrades & Storage Quotas*, Page 1):\n\nIf you downgrade from a higher tier to a lower tier:\n- The downgrade takes effect at the next renewal cycle. - If your account exceeds the storage quota of the lower tier (e.g. 500 GB on Pro vs 10 GB on Starter), you will have a 14-day grace period to download or remove excess data.\n\n*(Reference: ApexCloud Refund and Cancellation Policy - 5. Account Downgrades & Storage Quotas)*",
+        "citations": [
+          {
+            "chunk_id": "11100b1b_c5",
+            "doc_name": "ApexCloud Refund and Cancellation Policy",
+            "full_text": "If you downgrade from a higher tier to a lower tier:\n- The downgrade takes effect at the next renewal cycle.\n- If your account exceeds the storage quota of the lower tier (e.g. 500 GB on Pro vs 10 GB on Starter), you will have a 14-day grace period to download or remove excess data. After 14 days, files exceeding the quota will be read-only.",
+            "page_number": 1,
+            "section_title": "5. Account Downgrades & Storage Quotas",
+            "similarity_score": 0.4613,
+            "snippet": "If you downgrade from a higher tier to a lower tier:\n- The downgrade takes effect at the next renewal cycle.\n- If your account exceeds the storage quota of the lower tier (e.g. 500 GB on Pro vs 10 GB on Starter), you will have a 14-day...",
+            "source_type": "markdown"
+          },
+          {
+            "chunk_id": "e90add98_c3",
+            "doc_name": "ApexCloud Pricing and Plans",
+            "full_text": "- Price: $29 per user / month (or $24 per user / month billed annually - save 17%)\n- Users: 4 to 25 team members\n- Storage: 500 GB pooled storage\n- Features: Real-time document collaboration, unlimited workflow automation pipelines, REST API access (rate limit 1,000 requests/minute), 99.9% uptime SLA.\n- Support: Standard email and live chatbot support with a guaranteed 12-hour response time.",
+            "page_number": 1,
+            "section_title": "2. Professional Tier (Pro)",
+            "similarity_score": 0.3364,
+            "snippet": "- Price: $29 per user / month (or $24 per user / month billed annually - save 17%)\n- Users: 4 to 25 team members\n- Storage: 500 GB pooled storage\n- Features: Real-time document collaboration, unlimited workflow automation pipelines, REST...",
+            "source_type": "markdown"
+          },
+          {
+            "chunk_id": "a84c24c8_c2",
+            "doc_name": "ApexCloud API and Troubleshooting Guide",
+            "full_text": "ApexCloud enforces rate limits per tenant based on subscription tier:\n- Starter: No API access\n- Professional (Pro): 1,000 requests per minute\n- Business: 5,000 requests per minute\n- Enterprise: 25,000 requests per minute (custom bursts available)\n\nIf rate limits are exceeded, the API responds with HTTP 429 Too Many Requests and includes the following headers:\n- `X-RateLimit-Limit`: Maximum requests per minute.\n- `X-RateLimit-Remaining`: Remaining request quota.\n- `Retry-After`: Number of seconds to wait before retrying.",
+            "page_number": 1,
+            "section_title": "2. API Rate Limiting & Throttling",
+            "similarity_score": 0.2919,
+            "snippet": "ApexCloud enforces rate limits per tenant based on subscription tier:\n- Starter: No API access\n- Professional (Pro): 1,000 requests per minute\n- Business: 5,000 requests per minute\n- Enterprise: 25,000 requests per minute (custom bursts...",
+            "source_type": "markdown"
+          },
+          {
+            "chunk_id": "11100b1b_c1",
+            "doc_name": "ApexCloud Refund and Cancellation Policy",
+            "full_text": "ApexCloud offers a full, no-questions-asked 30-day money-back guarantee for all first-time purchases of Annual Pro and Annual Business plans. If you are not completely satisfied within the first 30 days of initial purchase, contact support@apexcloud.io or trigger a human support ticket to receive a 100% refund.",
+            "page_number": 1,
+            "section_title": "1. 30-Day Money-Back Guarantee",
+            "similarity_score": 0.2621,
+            "snippet": "ApexCloud offers a full, no-questions-asked 30-day money-back guarantee for all first-time purchases of Annual Pro and Annual Business plans. If you are not completely satisfied within the first 30 days of initial purchase, contact...",
+            "source_type": "markdown"
+          }
+        ],
+        "confidence_score": 0.461,
+        "is_fallback": false,
+        "suggest_handoff": false,
+        "hand_off_requested": false,
+        "timestamp": "03:56 PM"
+      },
+      {
+        "id": "u_1790677622984",
+        "role": "user",
+        "content": "Can I rent a submarine in the Bahamas?",
+        "timestamp": "03:57 PM"
+      },
+      {
+        "id": "b_1790677622994",
+        "role": "assistant",
+        "content": "I do not have enough verified information in our company documents to answer this question accurately. To make sure you get the exact details, would you like me to connect you with a human support specialist?",
+        "citations": [],
+        "confidence_score": 0,
+        "is_fallback": true,
+        "suggest_handoff": true,
+        "hand_off_requested": false,
+        "timestamp": "03:57 PM"
+      }
+    ],
+    "status": "open",
+    "assigned_agent": null,
+    "agent_notes": [],
+    "created_at": "2026-09-29T10:27:07.322299+00:00",
+    "updated_at": "2026-09-29T10:27:07.322299+00:00"
+  },
+  "TICK-1121": {
+    "ticket_id": "TICK-1121",
+    "customer_name": "Test User",
+    "customer_email": "test@example.com",
+    "priority": "medium",
+    "category": "General Inquiry",
+    "subject": "Automated Test Ticket",
+    "message": "Customer requested escalation from AI Chatbot.",
+    "session_id": "default",
+    "conversation_history": [],
+    "status": "open",
+    "assigned_agent": null,
+    "agent_notes": [],
+    "created_at": "2026-09-29T10:32:03.647218+00:00",
+    "updated_at": "2026-09-29T10:32:03.647218+00:00"
   }
 }

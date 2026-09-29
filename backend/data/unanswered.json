@@ -1,10 +1,10 @@
 {
   "metrics": {
-    "total_queries": 9,
-    "deflected_queries": 5,
-    "escalated_queries": 3,
-    "low_confidence_queries": 4,
-    "avg_confidence": 0.431
+    "total_queries": 24,
+    "deflected_queries": 15,
+    "escalated_queries": 7,
+    "low_confidence_queries": 9,
+    "avg_confidence": 0.413
   },
   "unanswered": {
     "unans_ece5638a": {
@@ -24,12 +24,28 @@
       "id": "unans_c501fd7b",
       "query": "Can I rent a submarine in the Bahamas?",
       "confidence": 0.0,
-      "frequency": 2,
+      "frequency": 5,
       "first_asked": "2026-09-29T09:53:11.493425+00:00",
-      "last_asked": "2026-09-29T10:07:20.137732+00:00",
+      "last_asked": "2026-09-29T10:32:03.641129+00:00",
       "sessions": [
         "default",
+        "default",
+        "session_main",
+        "session_main",
         "default"
+      ],
+      "status": "unresolved"
+    },
+    "unans_25673e74": {
+      "id": "unans_25673e74",
+      "query": "hii",
+      "confidence": 0.0,
+      "frequency": 2,
+      "first_asked": "2026-09-29T10:18:36.445239+00:00",
+      "last_asked": "2026-09-29T10:18:48.145954+00:00",
+      "sessions": [
+        "session_main",
+        "widget_session"
       ],
       "status": "unresolved"
     }

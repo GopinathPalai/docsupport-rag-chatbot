@@ -1,30 +1,30 @@
 {
   "documents": {
-    "6ab28d30": {
-      "doc_id": "6ab28d30",
+    "b0b26a6c": {
+      "doc_id": "b0b26a6c",
       "doc_name": "Refund Policy FAQ",
       "source_type": "faq",
       "file_path": null,
       "url": null,
       "char_count": 228,
       "chunk_count": 1,
-      "indexed_at": "2026-09-29T09:51:17.827916+00:00"
+      "indexed_at": "2026-09-29T10:30:27.136515+00:00"
     },
-    "f1da9f27": {
-      "doc_id": "f1da9f27",
+    "9bca717f": {
+      "doc_id": "9bca717f",
       "doc_name": "Pricing Catalog",
       "source_type": "faq",
       "file_path": null,
       "url": null,
       "char_count": 176,
       "chunk_count": 1,
-      "indexed_at": "2026-09-29T09:51:17.829620+00:00"
+      "indexed_at": "2026-09-29T10:30:27.138324+00:00"
     }
   },
   "chunks": [
     {
-      "chunk_id": "6ab28d30_c1",
-      "doc_id": "6ab28d30",
+      "chunk_id": "b0b26a6c_c1",
+      "doc_id": "b0b26a6c",
       "doc_name": "Refund Policy FAQ",
       "source_type": "faq",
       "page_number": 1,
@@ -34,8 +34,8 @@
       "token_estimate": 57
     },
     {
-      "chunk_id": "f1da9f27_c1",
-      "doc_id": "f1da9f27",
+      "chunk_id": "9bca717f_c1",
+      "doc_id": "9bca717f",
       "doc_name": "Pricing Catalog",
       "source_type": "faq",
       "page_number": 1,
@@ -46,5 +46,5 @@
     }
   ],
   "embeddings": {},
-  "saved_at": "2026-09-29T09:51:17.830883+00:00"
+  "saved_at": "2026-09-29T10:30:27.139737+00:00"
 }
