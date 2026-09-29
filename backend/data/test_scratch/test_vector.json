@@ -1,0 +1,50 @@
+{
+  "documents": {
+    "6ab28d30": {
+      "doc_id": "6ab28d30",
+      "doc_name": "Refund Policy FAQ",
+      "source_type": "faq",
+      "file_path": null,
+      "url": null,
+      "char_count": 228,
+      "chunk_count": 1,
+      "indexed_at": "2026-09-29T09:51:17.827916+00:00"
+    },
+    "f1da9f27": {
+      "doc_id": "f1da9f27",
+      "doc_name": "Pricing Catalog",
+      "source_type": "faq",
+      "file_path": null,
+      "url": null,
+      "char_count": 176,
+      "chunk_count": 1,
+      "indexed_at": "2026-09-29T09:51:17.829620+00:00"
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "6ab28d30_c1",
+      "doc_id": "6ab28d30",
+      "doc_name": "Refund Policy FAQ",
+      "source_type": "faq",
+      "page_number": 1,
+      "section_title": "Refund Policy FAQ",
+      "text": "ApexCloud provides a 30-day money-back guarantee for all annual subscriptions. If you cancel within 30 days of purchase, you will receive a 100% full refund with no questions asked. Monthly plans do not receive prorated refunds.",
+      "char_count": 228,
+      "token_estimate": 57
+    },
+    {
+      "chunk_id": "f1da9f27_c1",
+      "doc_id": "f1da9f27",
+      "doc_name": "Pricing Catalog",
+      "source_type": "faq",
+      "page_number": 1,
+      "section_title": "Pricing Catalog",
+      "text": "The Professional tier costs $29 per user per month billed monthly, or $24 per user per month billed annually. It includes 500 GB storage, REST API access, and 99.9% uptime SLA.",
+      "char_count": 176,
+      "token_estimate": 44
+    }
+  ],
+  "embeddings": {},
+  "saved_at": "2026-09-29T09:51:17.830883+00:00"
+}

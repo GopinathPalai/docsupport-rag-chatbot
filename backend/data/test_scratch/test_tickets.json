@@ -1,0 +1,68 @@
+{
+  "TICK-4685": {
+    "ticket_id": "TICK-4685",
+    "customer_name": "Sarah Connor",
+    "customer_email": "sarah@cyberdyne.com",
+    "priority": "urgent",
+    "category": "Billing",
+    "subject": "Enterprise contract refund query",
+    "message": "Need clarification on 30-day guarantee",
+    "session_id": "default",
+    "conversation_history": [],
+    "status": "in_progress",
+    "assigned_agent": null,
+    "agent_notes": [
+      {
+        "note": "Assigned to Senior Billing Specialist.",
+        "author": "Support Agent",
+        "timestamp": "2026-09-29T09:38:47.073248Z"
+      }
+    ],
+    "created_at": "2026-09-29T09:38:47.071729Z",
+    "updated_at": "2026-09-29T09:38:47.073262Z"
+  },
+  "TICK-1263": {
+    "ticket_id": "TICK-1263",
+    "customer_name": "Sarah Connor",
+    "customer_email": "sarah@cyberdyne.com",
+    "priority": "urgent",
+    "category": "Billing",
+    "subject": "Enterprise contract refund query",
+    "message": "Need clarification on 30-day guarantee",
+    "session_id": "default",
+    "conversation_history": [],
+    "status": "in_progress",
+    "assigned_agent": null,
+    "agent_notes": [
+      {
+        "note": "Assigned to Senior Billing Specialist.",
+        "author": "Support Agent",
+        "timestamp": "2026-09-29T09:42:43.716056+00:00"
+      }
+    ],
+    "created_at": "2026-09-29T09:42:43.715427+00:00",
+    "updated_at": "2026-09-29T09:42:43.716066+00:00"
+  },
+  "TICK-5443": {
+    "ticket_id": "TICK-5443",
+    "customer_name": "Sarah Connor",
+    "customer_email": "sarah@cyberdyne.com",
+    "priority": "urgent",
+    "category": "Billing",
+    "subject": "Enterprise contract refund query",
+    "message": "Need clarification on 30-day guarantee",
+    "session_id": "default",
+    "conversation_history": [],
+    "status": "in_progress",
+    "assigned_agent": null,
+    "agent_notes": [
+      {
+        "note": "Assigned to Senior Billing Specialist.",
+        "author": "Support Agent",
+        "timestamp": "2026-09-29T09:51:17.836730+00:00"
+      }
+    ],
+    "created_at": "2026-09-29T09:51:17.836222+00:00",
+    "updated_at": "2026-09-29T09:51:17.836737+00:00"
+  }
+}

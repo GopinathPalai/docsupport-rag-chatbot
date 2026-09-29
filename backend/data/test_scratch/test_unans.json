@@ -1,0 +1,38 @@
+{
+  "metrics": {
+    "total_queries": 9,
+    "deflected_queries": 4,
+    "escalated_queries": 3,
+    "low_confidence_queries": 5,
+    "avg_confidence": 0.51
+  },
+  "unanswered": {
+    "unans_0e5d1b3d": {
+      "id": "unans_0e5d1b3d",
+      "query": "What is the refund policy for annual subscriptions?",
+      "confidence": 0.301,
+      "frequency": 2,
+      "first_asked": "2026-09-29T09:38:47.067465Z",
+      "last_asked": "2026-09-29T09:42:43.712702+00:00",
+      "sessions": [
+        "default",
+        "default"
+      ],
+      "status": "unresolved"
+    },
+    "unans_0d85b6c1": {
+      "id": "unans_0d85b6c1",
+      "query": "Can I rent a submarine or helicopter in the Bahamas?",
+      "confidence": 0.0,
+      "frequency": 3,
+      "first_asked": "2026-09-29T09:38:47.070131Z",
+      "last_asked": "2026-09-29T09:51:17.835022+00:00",
+      "sessions": [
+        "default",
+        "default",
+        "default"
+      ],
+      "status": "unresolved"
+    }
+  }
+}

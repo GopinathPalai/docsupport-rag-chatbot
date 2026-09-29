@@ -1,0 +1,410 @@
+{
+  "documents": {
+    "a84c24c8": {
+      "doc_id": "a84c24c8",
+      "doc_name": "ApexCloud API and Troubleshooting Guide",
+      "source_type": "markdown",
+      "file_path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\code\\AI_Automation\\backend\\data\\sample_docs\\ApexCloud_API_and_Troubleshooting_Guide.md",
+      "url": null,
+      "char_count": 1895,
+      "chunk_count": 7,
+      "indexed_at": "2026-09-29T09:54:21.957907+00:00"
+    },
+    "1380cda8": {
+      "doc_id": "1380cda8",
+      "doc_name": "ApexCloud Enterprise SLA and Support Policy",
+      "source_type": "pdf",
+      "file_path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\code\\AI_Automation\\backend\\data\\sample_docs\\ApexCloud_Enterprise_SLA_and_Support_Policy.pdf",
+      "url": null,
+      "char_count": 2832,
+      "chunk_count": 7,
+      "indexed_at": "2026-09-29T09:54:21.966919+00:00"
+    },
+    "e90add98": {
+      "doc_id": "e90add98",
+      "doc_name": "ApexCloud Pricing and Plans",
+      "source_type": "markdown",
+      "file_path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\code\\AI_Automation\\backend\\data\\sample_docs\\ApexCloud_Pricing_and_Plans.md",
+      "url": null,
+      "char_count": 1876,
+      "chunk_count": 6,
+      "indexed_at": "2026-09-29T09:54:21.970610+00:00"
+    },
+    "11100b1b": {
+      "doc_id": "11100b1b",
+      "doc_name": "ApexCloud Refund and Cancellation Policy",
+      "source_type": "markdown",
+      "file_path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\code\\AI_Automation\\backend\\data\\sample_docs\\ApexCloud_Refund_and_Cancellation_Policy.md",
+      "url": null,
+      "char_count": 1996,
+      "chunk_count": 6,
+      "indexed_at": "2026-09-29T09:54:21.974007+00:00"
+    },
+    "0942f004": {
+      "doc_id": "0942f004",
+      "doc_name": "ApexCloud Security and Compliance FAQ",
+      "source_type": "markdown",
+      "file_path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\code\\AI_Automation\\backend\\data\\sample_docs\\ApexCloud_Security_and_Compliance_FAQ.md",
+      "url": null,
+      "char_count": 2117,
+      "chunk_count": 6,
+      "indexed_at": "2026-09-29T09:54:21.978685+00:00"
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "a84c24c8_c1",
+      "doc_id": "a84c24c8",
+      "doc_name": "ApexCloud API and Troubleshooting Guide",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "1. Authentication",
+      "text": "All API requests must include your Bearer API key in the HTTP Authorization header:\n```http\nAuthorization: Bearer apex_live_your_api_key_here\n```\nAPI keys can be generated and revoked in the Organization Settings > Developer Portal.",
+      "char_count": 232,
+      "token_estimate": 58
+    },
+    {
+      "chunk_id": "a84c24c8_c2",
+      "doc_id": "a84c24c8",
+      "doc_name": "ApexCloud API and Troubleshooting Guide",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "2. API Rate Limiting & Throttling",
+      "text": "ApexCloud enforces rate limits per tenant based on subscription tier:\n- Starter: No API access\n- Professional (Pro): 1,000 requests per minute\n- Business: 5,000 requests per minute\n- Enterprise: 25,000 requests per minute (custom bursts available)\n\nIf rate limits are exceeded, the API responds with HTTP 429 Too Many Requests and includes the following headers:\n- `X-RateLimit-Limit`: Maximum requests per minute.\n- `X-RateLimit-Remaining`: Remaining request quota.\n- `Retry-After`: Number of seconds to wait before retrying.",
+      "char_count": 526,
+      "token_estimate": 131
+    },
+    {
+      "chunk_id": "a84c24c8_c3",
+      "doc_id": "a84c24c8",
+      "doc_name": "ApexCloud API and Troubleshooting Guide",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "3. Webhooks & Event Subscriptions",
+      "text": "Webhooks deliver real-time notifications for events such as `document.created`, `workflow.failed`, and `user.invited`.\n- Webhooks must respond with HTTP 200 within 5 seconds.\n- In case of failure (5xx status or timeout), ApexCloud initiates exponential backoff retries:\n  - Attempt 1: Immediate retry (after 10s)\n  - Attempt 2: After 1 minute\n  - Attempt 3: After 5 minutes\n  - Attempt 4: After 30 minutes\n  - Attempt 5: After 2 hours (final attempt before dead-letter queue notification)",
+      "char_count": 488,
+      "token_estimate": 122
+    },
+    {
+      "chunk_id": "a84c24c8_c4",
+      "doc_id": "a84c24c8",
+      "doc_name": "ApexCloud API and Troubleshooting Guide",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "Error 401: Unauthorized (ERR_INVALID_TOKEN)",
+      "text": "- Cause: Missing or malformed Authorization header, or expired API key.\n- Resolution: Verify key prefix starts with `apex_live_` or `apex_test_`. Regenerate the key in Developer Portal.",
+      "char_count": 185,
+      "token_estimate": 46
+    },
+    {
+      "chunk_id": "a84c24c8_c5",
+      "doc_id": "a84c24c8",
+      "doc_name": "ApexCloud API and Troubleshooting Guide",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "Error 403: Forbidden (ERR_QUOTA_EXCEEDED)",
+      "text": "- Cause: Account storage threshold reached or action requires elevated role privileges.\n- Resolution: Upgrade subscription tier or clear archived assets.",
+      "char_count": 153,
+      "token_estimate": 38
+    },
+    {
+      "chunk_id": "a84c24c8_c6",
+      "doc_id": "a84c24c8",
+      "doc_name": "ApexCloud API and Troubleshooting Guide",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "Error 409: Conflict (ERR_RESOURCE_LOCKED)",
+      "text": "- Cause: Another concurrent process is updating the document or pipeline configuration.\n- Resolution: Implement optimistic locking with `If-Match` ETag headers.",
+      "char_count": 160,
+      "token_estimate": 40
+    },
+    {
+      "chunk_id": "a84c24c8_c7",
+      "doc_id": "a84c24c8",
+      "doc_name": "ApexCloud API and Troubleshooting Guide",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "Error 504: Gateway Timeout (ERR_UPSTREAM_TIMEOUT)",
+      "text": "- Cause: Complex multi-step workflow taking longer than 60 seconds.\n- Resolution: Switch to asynchronous execution using the `/v1/jobs/async` endpoint.",
+      "char_count": 151,
+      "token_estimate": 37
+    },
+    {
+      "chunk_id": "1380cda8_c1",
+      "doc_id": "1380cda8",
+      "doc_name": "ApexCloud Enterprise SLA and Support Policy",
+      "source_type": "pdf",
+      "page_number": 1,
+      "section_title": "Page 1",
+      "text": "ApexCloud Enterprise SLA & Support Policy Document Ref: SLA-ENT-2026 | Classification: Customer Facing 1. Service Level Agreement (SLA) Commitments ApexCloud guarantees a 99.99% monthly Service Availability uptime percentage for all Enterprise and Business tier customers. Availability is calculated on a calendar month basis excluding scheduled maintenance windows announced at least 72 hours in advance. If ApexCloud fails to meet the guaranteed 99.99% uptime target, eligible customers receive Service Level Credits: - 99.90% to 99.98% uptime: 10% credit applied to next monthly invoice. - 99.00%",
+      "char_count": 599,
+      "token_estimate": 149
+    },
+    {
+      "chunk_id": "1380cda8_c2",
+      "doc_id": "1380cda8",
+      "doc_name": "ApexCloud Enterprise SLA and Support Policy",
+      "source_type": "pdf",
+      "page_number": 1,
+      "section_title": "Page 1",
+      "text": "vice Level Credits: - 99.90% to 99.98% uptime: 10% credit applied to next monthly invoice. - 99.00% to 99.89% uptime: 25% credit applied to next monthly invoice. - Below 99.00% uptime: 50% credit applied to next monthly invoice. Credit requests must be submitted within thirty (30) days of the affected calendar month. 2. Incident Severity Levels & Response Times ApexCloud categorizes support requests into four severity tiers: * Severity 1 (Critical Outage): Catastrophic event causing complete disruption of core platform services for all or majority of users. Guaranteed Initial Response Time: 15",
+      "char_count": 600,
+      "token_estimate": 150
+    },
+    {
+      "chunk_id": "1380cda8_c3",
+      "doc_id": "1380cda8",
+      "doc_name": "ApexCloud Enterprise SLA and Support Policy",
+      "source_type": "pdf",
+      "page_number": 1,
+      "section_title": "Page 1",
+      "text": "ruption of core platform services for all or majority of users. Guaranteed Initial Response Time: 15 minutes. 24x7 continuous engineering escalation until resolution. * Severity 2 (Major Impairment): Severe degradation of critical functionality with no viable workaround. Guaranteed Initial Response Time: 1 hour. Active escalation during business hours. * Severity 3 (Minor Issue): Non-critical feature failure or system impairment with an available workaround. Guaranteed Initial Response Time: 4 business hours. * Severity 4 (General Inquiry): General configuration questions, feature requests, or",
+      "char_count": 600,
+      "token_estimate": 150
+    },
+    {
+      "chunk_id": "1380cda8_c4",
+      "doc_id": "1380cda8",
+      "doc_name": "ApexCloud Enterprise SLA and Support Policy",
+      "source_type": "pdf",
+      "page_number": 1,
+      "section_title": "Page 1",
+      "text": "usiness hours. * Severity 4 (General Inquiry): General configuration questions, feature requests, or documentation clarification. Guaranteed Initial Response Time: 12 business hours. Page 1",
+      "char_count": 189,
+      "token_estimate": 47
+    },
+    {
+      "chunk_id": "1380cda8_c5",
+      "doc_id": "1380cda8",
+      "doc_name": "ApexCloud Enterprise SLA and Support Policy",
+      "source_type": "pdf",
+      "page_number": 2,
+      "section_title": "Page 2",
+      "text": "ApexCloud Enterprise SLA & Support Policy Document Ref: SLA-ENT-2026 | Classification: Customer Facing 3. Human Support Handoff & Escalation Procedure When customer inquiries cannot be resolved through the AI Assistant or when automated answers do not fulfill the query, customers can seamlessly transition to a human support agent. The escalation process automatically transmits the customer name, corporate email address, full conversation transcript, and system diagnostic telemetry directly to our Tier 2 Support Engineering queue. For urgent issues, enterprise customers may also call our emerge",
+      "char_count": 600,
+      "token_estimate": 150
+    },
+    {
+      "chunk_id": "1380cda8_c6",
+      "doc_id": "1380cda8",
+      "doc_name": "ApexCloud Enterprise SLA and Support Policy",
+      "source_type": "pdf",
+      "page_number": 2,
+      "section_title": "Page 2",
+      "text": "r Tier 2 Support Engineering queue. For urgent issues, enterprise customers may also call our emergency phone hotline at +1 (800) 555-APEX available 24/7/365. 4. Data Backup & Disaster Recovery (DR) ApexCloud executes automated continuous point-in-time database backups with a Recovery Point Objective (RPO) of under 5 minutes. Full snapshot backups are replicated across multi-region availability zones daily. Our Recovery Time Objective (RTO) for full catastrophic failover is guaranteed at under 60 minutes. Disaster recovery simulations are conducted quarterly and compliance audit summaries are",
+      "char_count": 599,
+      "token_estimate": 149
+    },
+    {
+      "chunk_id": "1380cda8_c7",
+      "doc_id": "1380cda8",
+      "doc_name": "ApexCloud Enterprise SLA and Support Policy",
+      "source_type": "pdf",
+      "page_number": 2,
+      "section_title": "Page 2",
+      "text": "0 minutes. Disaster recovery simulations are conducted quarterly and compliance audit summaries are published to customer trust portals. Page 2",
+      "char_count": 143,
+      "token_estimate": 35
+    },
+    {
+      "chunk_id": "e90add98_c1",
+      "doc_id": "e90add98",
+      "doc_name": "ApexCloud Pricing and Plans",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "Overview",
+      "text": "ApexCloud is an intelligent enterprise cloud collaboration and workflow automation platform. We provide four transparent pricing tiers tailored to growing teams and global organizations.",
+      "char_count": 186,
+      "token_estimate": 46
+    },
+    {
+      "chunk_id": "e90add98_c2",
+      "doc_id": "e90add98",
+      "doc_name": "ApexCloud Pricing and Plans",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "1. Starter Tier (Free)",
+      "text": "- Price: $0 / month forever\n- Users: Up to 3 team members\n- Storage: 10 GB secure cloud storage\n- Features: Basic workflow boards, community forum support, standard SSL encryption.\n- Limitations: No API access, no custom domain, no phone or live chat support.",
+      "char_count": 259,
+      "token_estimate": 64
+    },
+    {
+      "chunk_id": "e90add98_c3",
+      "doc_id": "e90add98",
+      "doc_name": "ApexCloud Pricing and Plans",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "2. Professional Tier (Pro)",
+      "text": "- Price: $29 per user / month (or $24 per user / month billed annually - save 17%)\n- Users: 4 to 25 team members\n- Storage: 500 GB pooled storage\n- Features: Real-time document collaboration, unlimited workflow automation pipelines, REST API access (rate limit 1,000 requests/minute), 99.9% uptime SLA.\n- Support: Standard email and live chatbot support with a guaranteed 12-hour response time.",
+      "char_count": 394,
+      "token_estimate": 98
+    },
+    {
+      "chunk_id": "e90add98_c4",
+      "doc_id": "e90add98",
+      "doc_name": "ApexCloud Pricing and Plans",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "3. Business Tier",
+      "text": "- Price: $79 per user / month (or $65 per user / month billed annually - save 18%)\n- Users: 26 to 100 team members\n- Storage: 2 TB high-speed cloud storage\n- Features: Advanced analytics and audit logs, Single Sign-On (SSO via Okta, Google Workspace, Azure AD), custom branding, unlimited integrations.\n- Support: Priority email and live chat support with a guaranteed 2-hour response time during business hours.",
+      "char_count": 412,
+      "token_estimate": 103
+    },
+    {
+      "chunk_id": "e90add98_c5",
+      "doc_id": "e90add98",
+      "doc_name": "ApexCloud Pricing and Plans",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "4. Enterprise Tier",
+      "text": "- Price: $199 per user / month (minimum 50 seats, billed annually)\n- Users: Unlimited team members\n- Storage: Unlimited distributed storage\n- Features: Dedicated private cloud instance, custom data residency (US, EU, APAC), 99.99% financially backed uptime SLA, customized security controls.\n- Support: 24/7/365 dedicated Technical Account Manager (TAM), direct phone access, 15-minute response time SLA for critical incidents.",
+      "char_count": 427,
+      "token_estimate": 106
+    },
+    {
+      "chunk_id": "e90add98_c6",
+      "doc_id": "e90add98",
+      "doc_name": "ApexCloud Pricing and Plans",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "Payment Methods & Currencies",
+      "text": "ApexCloud accepts all major credit cards (Visa, MasterCard, American Express), PayPal, ACH wire transfers (for annual plans exceeding $5,000), and purchase orders. We bill in USD, EUR, GBP, and INR.",
+      "char_count": 198,
+      "token_estimate": 49
+    },
+    {
+      "chunk_id": "11100b1b_c1",
+      "doc_id": "11100b1b",
+      "doc_name": "ApexCloud Refund and Cancellation Policy",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "1. 30-Day Money-Back Guarantee",
+      "text": "ApexCloud offers a full, no-questions-asked 30-day money-back guarantee for all first-time purchases of Annual Pro and Annual Business plans. If you are not completely satisfied within the first 30 days of initial purchase, contact support@apexcloud.io or trigger a human support ticket to receive a 100% refund.",
+      "char_count": 312,
+      "token_estimate": 78
+    },
+    {
+      "chunk_id": "11100b1b_c2",
+      "doc_id": "11100b1b",
+      "doc_name": "ApexCloud Refund and Cancellation Policy",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "2. Monthly Subscription Cancellation",
+      "text": "Monthly subscriptions may be cancelled at any time through the Billing Settings page. \n- When you cancel a monthly subscription, cancellation takes effect at the end of the current billing cycle.\n- You will retain full access to your account and data until the current cycle expires.\n- We do NOT issue prorated refunds for partial months or unused days within an active monthly subscription cycle.",
+      "char_count": 397,
+      "token_estimate": 99
+    },
+    {
+      "chunk_id": "11100b1b_c3",
+      "doc_id": "11100b1b",
+      "doc_name": "ApexCloud Refund and Cancellation Policy",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "3. Annual Subscription Renewals & Cancellation",
+      "text": "Annual subscriptions renew automatically on their anniversary date.\n- ApexCloud sends automated email reminders 30 days and 7 days prior to renewal.\n- Customers may cancel auto-renewal at any time before the billing renewal date without penalty.\n- Refunds for annual renewals requested within 7 calendar days of renewal will be granted with a 10% administrative processing fee. After 7 calendar days, no refunds will be issued for annual renewals.",
+      "char_count": 447,
+      "token_estimate": 111
+    },
+    {
+      "chunk_id": "11100b1b_c4",
+      "doc_id": "11100b1b",
+      "doc_name": "ApexCloud Refund and Cancellation Policy",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "4. Enterprise Contract Terms",
+      "text": "Enterprise contracts are governed by their specific Master Services Agreement (MSA). \n- Enterprise agreements require a written cancellation notice at least 60 calendar days prior to contract renewal.\n- Early termination fees may apply as stipulated in Section 8.4 of the Enterprise MSA.",
+      "char_count": 287,
+      "token_estimate": 71
+    },
+    {
+      "chunk_id": "11100b1b_c5",
+      "doc_id": "11100b1b",
+      "doc_name": "ApexCloud Refund and Cancellation Policy",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "5. Account Downgrades & Storage Quotas",
+      "text": "If you downgrade from a higher tier to a lower tier:\n- The downgrade takes effect at the next renewal cycle.\n- If your account exceeds the storage quota of the lower tier (e.g. 500 GB on Pro vs 10 GB on Starter), you will have a 14-day grace period to download or remove excess data. After 14 days, files exceeding the quota will be read-only.",
+      "char_count": 343,
+      "token_estimate": 85
+    },
+    {
+      "chunk_id": "11100b1b_c6",
+      "doc_id": "11100b1b",
+      "doc_name": "ApexCloud Refund and Cancellation Policy",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "6. Chargebacks and Disputes",
+      "text": "We strongly urge customers to contact our support team before initiating a chargeback with their bank or credit card provider. Accounts with open dispute claims will be temporarily frozen pending investigation.",
+      "char_count": 210,
+      "token_estimate": 52
+    },
+    {
+      "chunk_id": "0942f004_c1",
+      "doc_id": "0942f004",
+      "doc_name": "ApexCloud Security and Compliance FAQ",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "1. Compliance Certifications",
+      "text": "- **SOC 2 Type II**: ApexCloud is audited annually by independent AICPA-accredited auditors. Our SOC 2 Type II report covering Security, Confidentiality, and Availability is available to customers under NDA upon request.\n- **ISO 27001:2022**: Certified across all engineering, infrastructure, and operational locations.\n- **GDPR & CCPA**: Fully compliant. We offer standard Data Processing Addendums (DPA) with standard contractual clauses (SCCs) for cross-border data transfers.",
+      "char_count": 479,
+      "token_estimate": 119
+    },
+    {
+      "chunk_id": "0942f004_c2",
+      "doc_id": "0942f004",
+      "doc_name": "ApexCloud Security and Compliance FAQ",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "1. Compliance Certifications",
+      "text": "Processing Addendums (DPA) with standard contractual clauses (SCCs) for cross-border data transfers.\n- **HIPAA**: HIPAA compliance and Business Associate Agreements (BAAs) are available exclusively for Business and Enterprise tier subscribers.",
+      "char_count": 243,
+      "token_estimate": 60
+    },
+    {
+      "chunk_id": "0942f004_c3",
+      "doc_id": "0942f004",
+      "doc_name": "ApexCloud Security and Compliance FAQ",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "2. Data Encryption Standards",
+      "text": "- **Encryption in Transit**: All communications with ApexCloud services are enforced over TLS 1.3 with forward secrecy. Deprecated protocols (TLS 1.0, 1.1) are rejected.\n- **Encryption at Rest**: Customer databases, file uploads, and vector search embeddings are encrypted using AES-256 bit encryption keys managed through AWS KMS with automatic annual key rotation.\n- **Customer Managed Keys (BYOK)**: Available on the Enterprise tier, enabling customers to manage encryption keys in their own AWS KMS or HashiCorp Vault.",
+      "char_count": 522,
+      "token_estimate": 130
+    },
+    {
+      "chunk_id": "0942f004_c4",
+      "doc_id": "0942f004",
+      "doc_name": "ApexCloud Security and Compliance FAQ",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "3. Data Residency & Regions",
+      "text": "Customers can designate where their primary data and backups reside:\n- US-East (Northern Virginia)\n- US-West (Oregon)\n- EU-Central (Frankfurt, Germany - GDPR localized)\n- APAC (Singapore)\n\nData never leaves the chosen jurisdiction without explicit administrative authorization.",
+      "char_count": 277,
+      "token_estimate": 69
+    },
+    {
+      "chunk_id": "0942f004_c5",
+      "doc_id": "0942f004",
+      "doc_name": "ApexCloud Security and Compliance FAQ",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "4. Authentication and Access Controls",
+      "text": "- Multi-Factor Authentication (MFA): Supports TOTP (Google Authenticator, Authy) and FIDO2 / WebAuthn hardware security keys (YubiKey). Enforceable across organization-wide policies.\n- Single Sign-On (SSO): Native SAML 2.0 and OIDC integrations supporting Okta, Microsoft Azure Active Directory, Google Workspace, Ping Identity, and OneLogin.\n- Role-Based Access Control (RBAC): Four default roles (Owner, Admin, Member, Guest) plus custom role creation on Business and Enterprise tiers.",
+      "char_count": 487,
+      "token_estimate": 121
+    },
+    {
+      "chunk_id": "0942f004_c6",
+      "doc_id": "0942f004",
+      "doc_name": "ApexCloud Security and Compliance FAQ",
+      "source_type": "markdown",
+      "page_number": 1,
+      "section_title": "5. Vulnerability Management & Bug Bounty",
+      "text": "ApexCloud conducts continuous automated static and dynamic code scanning (SAST/DAST) and contracts with CREST-certified penetration testers biannually. We run an active private bug bounty program on HackerOne.",
+      "char_count": 209,
+      "token_estimate": 52
+    }
+  ],
+  "embeddings": {},
+  "saved_at": "2026-09-29T09:54:21.982747+00:00"
+}

@@ -1,0 +1,37 @@
+{
+  "metrics": {
+    "total_queries": 9,
+    "deflected_queries": 5,
+    "escalated_queries": 3,
+    "low_confidence_queries": 4,
+    "avg_confidence": 0.431
+  },
+  "unanswered": {
+    "unans_ece5638a": {
+      "id": "unans_ece5638a",
+      "query": "What is the refund policy for annual plans?",
+      "confidence": 0.0,
+      "frequency": 2,
+      "first_asked": "2026-09-29T09:43:16.079864+00:00",
+      "last_asked": "2026-09-29T09:43:30.215459+00:00",
+      "sessions": [
+        "default",
+        "default"
+      ],
+      "status": "unresolved"
+    },
+    "unans_c501fd7b": {
+      "id": "unans_c501fd7b",
+      "query": "Can I rent a submarine in the Bahamas?",
+      "confidence": 0.0,
+      "frequency": 2,
+      "first_asked": "2026-09-29T09:53:11.493425+00:00",
+      "last_asked": "2026-09-29T10:07:20.137732+00:00",
+      "sessions": [
+        "default",
+        "default"
+      ],
+      "status": "unresolved"
+    }
+  }
+}

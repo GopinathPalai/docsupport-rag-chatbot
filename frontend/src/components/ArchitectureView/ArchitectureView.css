@@ -1,0 +1,238 @@
+.arch-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.arch-header {
+  margin-bottom: 4px;
+}
+
+/* Pipeline Flow Grid */
+.pipeline-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .pipeline-flow-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .pipeline-flow-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flow-step-card {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.step-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(99, 102, 241, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.step-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.step-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* Inspector Panel */
+.inspector-panel {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inspector-header {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 14px;
+}
+
+.inspector-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.inspector-subtitle {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+.inspector-form {
+  display: flex;
+  gap: 10px;
+}
+
+.pipeline-output {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pipeline-decision-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.decision-grounded {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.decision-fallback {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.decision-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.decision-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.decision-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.decision-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.metric-tag {
+  background: rgba(15, 23, 42, 0.6);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.775rem;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+.metric-tag strong {
+  color: var(--text-primary);
+}
+
+.inspector-chunks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 860px) {
+  .inspector-chunks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.col-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.inspector-chunk-card {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.chunk-meta-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.chunk-section {
+  font-size: 0.725rem;
+  color: var(--text-muted);
+}
+
+.chunk-snippet-text {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  background: rgba(11, 15, 25, 0.4);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.inspector-answer-box {
+  padding: 20px;
+  background: rgba(30, 41, 59, 0.5);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.empty-chunks-box {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
